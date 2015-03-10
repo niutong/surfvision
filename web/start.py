@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def index():
+def home():
     return render_template('index_cn.html')
 
 
@@ -16,42 +16,42 @@ def index():
 
 
 @app.route('/about_us_cn.html')
-def index():
+def about_us():
     return render_template('about_us.html')
 
 
 @app.route('/values_cn.html')
-def index():
+def values():
     return render_template('values.html')
 
 
 @app.route('/service_cn.html')
-def index():
+def service():
     return render_template('service.html')
 
 
 @app.route('/advantage_cn.html')
-def index():
+def advantage():
     return render_template('advantage.html')
 
 
 @app.route('/service_guarantee_cn.html')
-def index():
+def guarantee():
     return render_template('guarantee.html')
 
 
 @app.route('/client_candidates_cn.html')
-def index():
+def candidates():
     return render_template('candidates.html')
 
 
 @app.route('/join_us_cn.html')
-def index():
+def join_us():
     return render_template('join_us.html')
 
 
 @app.route('/contact_cn.html')
-def index():
+def contact():
     return render_template('contact.html')
 
 
