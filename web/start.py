@@ -55,12 +55,12 @@ def contact():
     return render_template('contact.html')
 
 @app.route('/resumes_cn.html')
-def contact():
+def resumes():
     return render_template('resumes.html')
 
 
 @app.route('/achievements_cn.html')
-def contact():
+def achievement():
     return render_template('achievement.html')
 
 
