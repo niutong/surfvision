@@ -54,6 +54,14 @@ def join_us():
 def contact():
     return render_template('contact.html')
 
+@app.route('/resumes_cn.html')
+def contact():
+    return render_template('resumes.html')
+
+
+@app.route('/achievements_cn.html')
+def contact():
+    return render_template('achievement.html')
 
 
 if __name__ == '__main__':
