@@ -27,6 +27,10 @@ def values():
 def service():
     return render_template('service.html')
 
+@app.route('/target.html')
+def service():
+    return render_template('target.html')
+
 
 @app.route('/advantage.html')
 def advantage():
