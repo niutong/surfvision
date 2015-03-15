@@ -4,62 +4,61 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
-
 @app.route('/')
 def home():
-    return render_template('index_cn.html')
+    return render_template('index.html')
 
-
-@app.route('/index_cn.html')
+@app.route('/index.html')
 def index():
-    return render_template('index_cn.html')
+    return render_template('index.html')
 
 
-@app.route('/about_us_cn.html')
+@app.route('/about_us.html')
 def about_us():
-    return render_template('test_about_us.html')
+    return render_template('about_us.html')
 
 
-@app.route('/values_cn.html')
+@app.route('/values.html')
 def values():
     return render_template('values.html')
 
 
-@app.route('/service_cn.html')
+@app.route('/service.html')
 def service():
     return render_template('service.html')
 
 
-@app.route('/advantage_cn.html')
+@app.route('/advantage.html')
 def advantage():
     return render_template('advantage.html')
 
 
-@app.route('/service_guarantee_cn.html')
+@app.route('/guarantee.html')
 def guarantee():
     return render_template('guarantee.html')
 
 
-@app.route('/client_candidates_cn.html')
+@app.route('/client_candidates.html')
 def candidates():
     return render_template('candidates.html')
 
 
-@app.route('/join_us_cn.html')
+@app.route('/join_us.html')
 def join_us():
     return render_template('join_us.html')
 
 
-@app.route('/contact_cn.html')
+@app.route('/contact.html')
 def contact():
     return render_template('contact.html')
 
-@app.route('/resumes_cn.html')
+
+@app.route('/resumes.html')
 def resumes():
     return render_template('resumes.html')
 
 
-@app.route('/achievements_cn.html')
+@app.route('/achievements.html')
 def achievement():
     return render_template('achievement.html')
 

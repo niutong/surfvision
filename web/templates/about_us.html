@@ -1,256 +1,45 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block body %}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-<META NAME="Author" CONTENT="Surfvision">
-<META NAME="Keywords" CONTENT="服务，职位，简历，咨询，猎头，联系，团队，资源，优势，客户，市场，业绩，隐私，法律">
-<title>Surfvision</title>
-<style type="text/css">
-<!--
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	background-color: #DBDABA;
-}
-td,tr,th,div,span{
-font-family:Arial, Helvetica, sans-serif;
-font-size:11px;
-color:#1f334f;
-}
-.bs a {
-	font-size: 11px;
-	color: #ffffff;
-	font-weight:bold;
-}
-.bs a:visited {
-	font-size: 11px;
-	color: #ffffff;
-	font-weight:bold;
-}
-.bs a:hover {
-	font-size: 11px;
-	color: #ffffff;
-	font-weight:bold;
-}
-.bs a:active {
-	font-size: 11px;
-	color: #ffffff;
-	font-weight:bold;
-}
-.bs{
-	font-size: 11px;
-	color: #ffffff;
-	font-weight:bold;
-	cursor:pointer;
-}
-.menu_list{
-	padding-top:15px;
-	font-size:9pt;
-	height:47px;
-	width:auto;
-	padding-bottom:15px;
-	padding-left:15px;
-	padding-right:15px;
-	color:#ffffff;
-	font-family:Arial, Helvetica, sans-serif;
-	cursor:pointer;
-
-}
-.menu_list_checked{
-	padding-top:15px;
-	font-size:9pt;
-	height:47px;
-	width:auto;
-	padding-bottom:15px;
-	padding-left:15px;
-	padding-right:15px;
-	color:#ffffff;
-	font-family:Arial, Helvetica, sans-serif;
-	background-color: #B8B55B;
-	<!--background-image:url(http://www.cipherkey.cn/Content/Home/images/home_r3_c3.png);-->
-	cursor:pointer;
-}
-.List2{
-	color:#ffffff;
-	padding-top:10px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	font-weight:bold;
-	cursor:pointer;
-}
-.List3{
-	padding-top:10px;
-	padding-left:20px;
-	color:#D2D09F;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:11px;
-}
-.STYLE1 {
-	color: #000000;
-	font-size: 20px;
-	font-weight: bold;
-}
-.STYLE2 {
-	color: #000000;
-	font-size: 15px;
-}
-.STYLE3 {color: #000000;
-	line-height:150%;
-	padding-left:20px;
-	padding-top:10px;
-}
-.style4
-{
-padding-top:10px;
-padding-left:20px;
-color:#000000;
-font-weight:bold;
-
-}
-a:link
-{
-text-decoration: none;
-}
-a:visited
-{
-text-decoration: none;
-}
-a:hover
-{
-text-decoration: none;
-}
-.STYLE6
-{
-color:#ffffff;
-font-size:9pt;
-
-}
-.STYLE7
-{
-color:#B8B67D;
-
-}
-.STYLE8
-{
-color: #D2D09F;
-line-height:150%;
-
-}
-.STYLE9
-{
-color:#D2D09F;
-cursor:pointer;
-}
-#scrollright{overflow-y:scroll; *overflow-y:hidden;}
-*+html #scrollright{ overflow-y:hidden;}
--->
-</style></head>
-
-<body id="scrollright">
-<table width="830" border="0" align="center" cellpadding="0" cellspacing="0">
-   <tr>
-     <td><span onclick="javascript:location='index_cn.html'" style="cursor:hand"><img src="http://www.cipherkey.cn/Content/Home/images/home_r1_c3.png" width="257" height="106" border=0/></span></td>
-    <td align="right" valign="bottom" style="padding-bottom:20px;padding-right:3px;"><span onclick="javascript:location='about_us.html'" class="bs"><u>English</u></span></td>
-  </tr>
-  <tr>
-    <td height="47" colspan="2" bgcolor="#8B7D20"><table width="100%" border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-	    <td align="center"><span class="menu_list" onclick="javascript:location='index_cn.html'" class="STYLE6" onMouseover="a()"  onMouseout="b()">首页</span></td>
-        <td align="center" id="a1" onmouseout="javascript:MenuOut('a1');" onmouseover="javascript:MenuOver('a1')"><span class="menu_list_checked" class="STYLE6" onMouseover="a()"  onMouseout="b()" onclick="javascript:location='about_us_cn.html'" id="a1_MainTag">关于我们</span>
-		<div style="position:relative;" align=left>
-				<div id="a1_list" style="display:none;position:absolute;width:164px;height:auto;background-color:#868449;top:15px;left:13px;" align="center" onmouseout="javascript:MenuListOut('a1');" onmouseover="javascript:MenuListOver('a1');">
-				<table cellpadding=5 cellspacing=0 border=0 width=100%>
-				<tr>
-				<td onmouseout="javascript:this.style.backgroundColor='#868449'" onmouseover="javascript:this.style.backgroundColor='#868449'" onclick="javascript:location='about_us_cn.html'" style="cursor:pointer;"><font color="#ffffff" style="cursor:pointer;" >
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司概览</font>
-				</td>
-				</tr>
-				<tr>
-				<td onmouseout="javascript:this.style.backgroundColor='#868449'" onmouseover="javascript:this.style.backgroundColor='#868449'" onclick="javascript:location='values_cn.html'" style="cursor:pointer;"><font color="#ffffff" style="cursor:pointer;">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的价值观</font>
-				</td>
-				</tr>
-				</table>
-				</div>
-			</div>
-	    </td>
-        <td align="center"  id="a2" onmouseout="javascript:MenuOut('a2');" onmouseover="javascript:MenuOver('a2')"><span class="menu_list"  class="STYLE6" onMouseover="a()"  onMouseout="b()" onclick="javascript:location='service_cn.html'" id="a2_MainTag">我们的服务</span>
-		<div style="position:relative;" align=left>
-			<div id="a2_list" style="display:none;position:absolute;width:164px;height:auto;background-color:#868449;top:15px;left:13px;" align="center" onmouseout="javascript:MenuListOut('a2');" onmouseover="javascript:MenuListOver('a2');">
-			<table cellpadding=5 cellspacing=0 border=0 width=100%>
-			<tr>
-			<td onmouseout="javascript:this.style.backgroundColor='#868449'" onmouseover="javascript:this.style.backgroundColor='#868449'" onclick="javascript:location='service_cn.html'" style="cursor:pointer;"><font color="#ffffff" style="cursor:pointer;" >
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人才推荐服务 </font>
-			</td>
-			</tr>
-			<tr>
-			<td onmouseout="javascript:this.style.backgroundColor='#868449'" onmouseover="javascript:this.style.backgroundColor='#868449'" onclick="javascript:location='client_candidates_cn.html'" style="cursor:pointer;"><font color="#ffffff" style="cursor:pointer;" >
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客户与候选人市场</font>
-			</td>
-			</tr>
-				<tr>
-			<td onmouseout="javascript:this.style.backgroundColor='#868449'" onmouseover="javascript:this.style.backgroundColor='#868449'" onclick="javascript:location='achievements_cn.html'" style="cursor:pointer;"><font color="#ffffff" style="cursor:pointer;">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业绩 </font>
-			</td>
-			</tr>
-			</table>
-			</div>
-		</div>
-		</td>
-		<td align="center"><span class="menu_list" onclick="javascript:location='career_center_cn.html'" class="STYLE6" onMouseover="a()"  onMouseout="b()">职位中心</span></td>
-		<td align="center"><span class="menu_list" onclick="javascript:location='resumes_cn.html'" class="STYLE6" onMouseover="a()"  onMouseout="b()">登记简历</span></td>
-        <td align="center"><span class="menu_list" onclick="javascript:location='news_cn.html'" class="STYLE6" onMouseover="a()"  onMouseout="b()">资讯中心</span></td>
-        <td align="center"><span class="menu_list" onclick="javascript:location='join_us_cn.html'" class="STYLE6" onMouseover="a()"  onMouseout="b()">加入我们</span></td>
-        <td align="center"><span class="menu_list" onclick="javascript:location='contact_cn.html'" class="STYLE6" onMouseover="a()"  onMouseout="b()">联系我们</span></td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
 <table width="830" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="208" height="200" align="right" valign="top" bgcolor="#B8B67D">
 	<br>
 	<table width="90%" border="0" cellspacing="0" cellpadding="0">
        <tr>
-        <td class="List2"><span onclick="javascript:location='about_us_cn.html'" class="List2">公司概览</span></td>
+        <td class="List2"><span onclick="javascript:location='about_us.html'" class="List2">公司概览</span></td>
       </tr>
 	  <tr>
-        <td class="List2"><span onclick="javascript:location='values_cn.html'" class="List2">我们的价值观</span></td>
+        <td class="List2"><span onclick="javascript:location='values.html'" class="List2">我们的价值观</span></td>
+      </tr>
+        <tr>
+        <td class="List2"><span onclick="javascript:location='target.html'" class="List2">我们的目标</span></td>
       </tr>
     </table></td>
-    <td align="center" valign="top" bgcolor="#FFFFFF"><table width="98%" border="0" align="center" cellpadding="6" cellspacing="0">
-      <tr>
-        <td align="right"><a href="index_cn.html" class="STYLE7">首页</a> > <a href="about_us_cn.html" class="STYLE7">关于我们</a> > <a href="about_us_cn.html" class="STYLE7">公司概览</a></td>
-      </tr>
-    </table>
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td align="left" valign="middle" style="padding-left:20px;"><span class="STYLE1">公司概览</span></td>
-          <td width="300" height="90"><img src="http://www.cipherkey.cn/Content/Home/images/about us.jpg" width="300" height="90"></td>
-        </tr>
-      </table>
+    <td align="center" valign="top" bgcolor="#FFFFFF">
 	  <br>
       <table width="95%" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td style="line-height:200%;font-size:12px"><p>
-弗奇上信成立于2004年，以北京，上海为中心，人才搜寻范围覆盖中国主要城市，是中国领先的人才搜寻服务公司之一。<p>
+上锐韦森咨询有限公司是由从事管理咨询行业多年的资深人士创建，是一家服务国际跨国企业和国内快速发展企业的专业管理咨询服务机构，人才搜寻范围覆盖中国主要城市，是中国领先的人才搜寻服务公司之一。<p>
 
 
-在这些领域（快速消费品，高科技通讯，医药医疗，电子制造，互联网，房地产，零售和奢侈品等行业），每个客户经理带领团队（顾问，搜寻调研员等）专注搜寻选才某些职位如：总经理，人事，销售，市场，财务，技术，采购，物流等。弗奇上信已经在中国为客户搜寻选才完成许多重要的职位，这些职位从高级管理层到中层主管级别及部分专业性职位。<p>
+上锐韦森的顾问团队是由多位从事猎头服务多年的资深顾问所组成；为得是给客户提供更专业、更快速、更准确、质量更高的服务。<p>
 
 
-我们从涵盖各商业领域及职能范围的招聘工作中获得了丰富的经验。同时，我们也通过这些经验，证明了我们在中国超过六十个城市的招聘委托操作能力。无论是从全球五百强的跨国公司，还是各类国内优秀的民营企业，又或是亟待蓬勃的新兴企业，都获得过我们优质的服务。<p>
+上锐韦森可以在行业咨询层面，企业框架层面，人员发展层面给企业提供最专业的咨询，是企业和企业员工的的良师益友，人力资源合作伙伴。<p>
 
 
-我们的客户之所以选择弗奇上信，是因为我们能为他们提供准确高效而快速的人才招聘服务，通过我们卓越的服务表现与客户保持长期的合作关系。 <p>
+在这些领域（互联网、通讯、消费品、零售、市场研究，动漫等），每个高级顾问带领团队（顾问，搜寻调研员等）专注搜寻选才；某些职位如：总经理，总监，人事，销售，市场，财务，技术，采购，物流等。上锐韦森已经在中国为客户搜寻选才完成许多重要的职位，这些职位从高级管理层到中层主管级别及部分专业性职位。<p>
 
 
-弗奇上信一直保持着快速而稳健的发展。在这个过程当中，我们对公司的定位有清晰的认知：人才推荐服务不是因应招聘的紧迫性而提供一些“应急人才”，而是尽我们所能，通过服务，为客户提供更多的价值——帮助我们的客户在生意及个人职业发展上获得成功。<p>
+我们从涵盖各商业领域及职能范围的招聘工作中获得了丰富的经验。同时，我们也通过这些经验，证明了我们在中国多个城市的招聘委托操作能力。无论是从全球五百强的跨国公司，还是各类国内优秀的民营企业，又或是亟待蓬勃的新兴企业，都获得过我们优质的服务。<p>
+
+我们的客户之所以选择上锐韦森，是因为我们能为他们提供准确高效而快速的人才招聘服务，通过我们卓越的服务表现与客户保持长期的合作关系。<p>
+
+上锐韦森一直保持着快速而稳健的发展。在这个过程当中，我们对公司的定位有清晰的认知：人才推荐服务不是因应招聘的紧迫性而提供一些“应急人才”，而是尽我们所能，通过服务，为客户提供更多的价值——帮助我们的客户在生意及个人职业发展上获得成功。<p>
 
 </p></td>
   </tr>
@@ -264,69 +53,4 @@ cursor:pointer;
       </table></td>
   </tr>
 </table>
-<table width="830" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td bgcolor="#D2D09F" align="left" class="style4"><font style="padding-left:20px"><span onclick="javascript:location='qa.html'" class="style9" >Q&amp;A</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span onclick="javascript:location='privacy.html'" class="style9">Privacy Policy</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span onclick="javascript:location='legal_disclaimer.html'" class="style9">Legal Disclaimer</span></font>
-		<div class="STYLE3" style="font-weight:normal;">
-		Copyright(C) 2004-2009 Cipherkey Management Consulting Ltd <br>
-Cipherkey claims the copyright of all material and information produced originally by our staff. <br>
-All rights reserved.&nbsp;<a href=http://www.miibeian.gov.cn target=_blank><font color=#F08080>京ICP备09034266号-8</font></a><br>&nbsp;</div>	</td>
-  </tr>
-  <tr>
-    <td height="8" bgcolor="#ffffff"></td>
-  </tr>
-</table>
-<script language="JavaScript">
-<!--
-function a()
-{
-	event.srcElement.className = "menu_list_checked";
-}
-function b()
-{
-	event.srcElement.className = "menu_list";
-}
-var ManId="";
-var MainTimeOut="";
-function MenuOut(objid)
-{
-if(ManId!=objid)
-{
-	document.getElementById(objid+"_list").style.display='none';
-	document.getElementById(objid+"_MainTag").className="menu_list";
-}
-else
-{
-	MainTimeOut=setInterval("CloseMenu('"+objid+"');",0.1);
-}
-}
-function MenuOver(objid)
-{
-	ManId=objid;
-	document.getElementById(objid+"_list").style.display='block';
-	document.getElementById(objid+"_MainTag").className="menu_list_checked";
-}
-function MenuListOut(objId)
-{
-	clearInterval(MainTimeOut);
-	document.getElementById(objId+"_list").style.display='none';
-	document.getElementById(objId+"_MainTag").className="menu_list";
-	ManId="";
-}
-function MenuListOver(objId)
-{
-	clearInterval(MainTimeOut);
-	document.getElementById(objId+"_list").style.display='block';
-	document.getElementById(objId+"_MainTag").className="menu_list_checked";
-}
-function CloseMenu(objId)
-{
-    clearInterval(MainTimeOut);
-	document.getElementById(objId+"_list").style.display='none';
-	document.getElementById(objId+"_MainTag").className="menu_list";
-	ManId="";
-}
--->
-</script>
-</body>
-</html>
+{% endblock %}
