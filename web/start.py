@@ -28,7 +28,7 @@ def service():
     return render_template('service.html')
 
 @app.route('/target.html')
-def service():
+def target():
     return render_template('target.html')
 
 
